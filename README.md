@@ -20,3 +20,12 @@ There are legendary mobs in the game, such as Nazgul, Ringwraiths, Balrogs, and 
 
 You can acquire legendary weapons by opening chests with the "LOOTBOX!" command.
 Even with a legendary weapon, however, you only have  a 50% chance of success.
+
+# Future features
+I intend to add additional features:
+- Swords need a scabbard
+- Regions such as the fields of Rohan and the depths of Mirkwood, which will influence the randomness.
+- Talking to friendly mobs is more interactive
+- You can buy powers with points
+- Shields increase your chances against legendary mobs
+- You have a choice as to where to go next, e.g. "a gate leads out of the area, and there is a path to the southwest."

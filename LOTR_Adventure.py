@@ -1,4 +1,4 @@
-# LOTR-themed Adventure clone by Joseph Daly, licensed CC0
+# LOTR-themed Adventure clone by Joseph Daly, using the MIT license.
 #
 # Adventure games work by showing text and asking for
 # responses. The responses influence the outcome.

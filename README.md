@@ -23,7 +23,6 @@ Even with a legendary weapon, however, you only have  a 50% chance of success.
 
 # Future features
 I intend to add additional features:
-- Swords need a scabbard
 - Regions such as the fields of Rohan and the depths of Mirkwood, which will influence the randomness.
 - Talking to friendly mobs is more interactive
 - You can buy powers with points

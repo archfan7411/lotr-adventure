@@ -2,6 +2,7 @@
 A Lord of the Rings-themed randomly generated text adventure game.
 
 # Installation
+A working installation of Python 3 is required to successfully execute this program. https://python.org
 Linux:
   Unzip the file and run the python file like so:
   python LOTR_Adventure.py

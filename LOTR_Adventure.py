@@ -20,11 +20,15 @@ adjectives = ["great","large","small","arid","serene"]
 
 # Then items that we may encounter at these locations.
 
-items = ["axe","sword","dagger","chest","ring","shield","potion","bow","quiver","scroll"]
+items = ["axe","sword","dagger","chest","ring","shield","potion","bow","quiver","scroll","scabbard"]
 
 # Prerequisite items (e.g. you need a quiver to use a bow)
 
 bow_pre = "quiver"
+sword_pre = "scabbard"
+dagger_pre = "scabbard"
+
+prerequisite_items = ["dagger","bow","sword"] # Items that require prerequisites
 
 # Items needed to defeat levels of mob.
 
@@ -132,13 +136,26 @@ while(1):
     
         for item in action_take:
             if item in response:
-                if loot is "bow":
-                    if bow_pre in inventory:
-                        inventory.append(loot)
-                        print("You pick up the bow since you have a quiver to go with it.")
-                    if bow_pre not in inventory:
-                        print("You leave the bow there - no use without a quiver.")
-                if loot is not "bow":
+                if loot in prerequisite_items: # If a prerequisite is needed for this item
+                    if loot is "bow":
+                        if bow_pre in inventory:
+                            inventory.append(loot)
+                            print("You pick up the bow since you have a quiver to go with it.")
+                        if bow_pre not in inventory:
+                            print("You leave the bow there - no use without a quiver.")
+                    if loot is "sword":
+                        if sword_pre in inventory:
+                            inventory.append(loot)
+                            print("You pick up the sword. It fits perfectly in the scabbard you found!")
+                        if sword_pre not in inventory:
+                            print("You look at the sword, but have no way to carry it in the journey ahead.")
+                    if loot is "dagger":
+                        if dagger_pre in inventory:
+                            inventory.append(loot)
+                            print("This is a very nice dagger, and it fits quite well in that scabbard.")
+                        if dagger_pre not in inventory:
+                            print("It's a nice trinket, you have no place to store the dagger.")
+                if loot not in prerequisite_items:
                     inventory.append(loot)
                     print("You picked up the", loot)
                 moveon = True
